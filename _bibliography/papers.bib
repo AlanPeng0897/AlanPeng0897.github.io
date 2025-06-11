@@ -1,115 +1,61 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@article{peng2025bido_plus,
+  title={Unknown-Aware Bilateral Dependency Optimization for Defending Against Model Inversion Attacks},
+  author={Xiong Peng and Feng Liu and Nannan Wang and Long Lan and Tongliang Liu and Yiu-ming Cheung and Bo Han},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2025},
+  abbr={TPAMI},
+  pdf={https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10949821},
+  code={https://github.com/AlanPeng0897/BiDO_plus},
+  selected={false},
+  abstract={
+    By abusing access to a well-trained classifier, model inversion (MI) attacks pose a significant threat as they can recover the original training data, leading to privacy leakage. Previous studies mitigated MI attacks by imposing regularization to reduce the dependency between input features and outputs during classifier training, a strategy known as unilateral dependency optimization. However, this strategy contradicts the objective of minimizing the supervised classification loss, which inherently seeks to maximize the dependency between input features and outputs. Consequently, there is a trade-off between improving the model's robustness against MI attacks and maintaining its classification performance. To address this issue, we propose the bilateral dependency optimization strategy (BiDO), a dual-objective approach that minimizes the dependency between input features and latent representations, while simultaneously maximizing the dependency between latent representations and labels. BiDO is remarkable for its privacy-preserving capabilities. However, models trained with BiDO exhibit diminished capabilities in out-of-distribution (OOD) detection compared to models trained with standard classification supervision. Given the open-world nature of deep learning systems, this limitation could lead to significant security risks, as encountering OOD inputs—whose label spaces do not overlap with the in-distribution (ID) data used during training-is inevitable. To address this, we leverage readily available auxiliary OOD data to enhance the OOD detection performance of models trained with BiDO. This leads to the introduction of an upgraded framework, unknown-aware BiDO (BiDO+), which mitigates both privacy and security concerns.  
+  }
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+
+@inproceedings{zhou2024survey,
+  title={Model Inversion Attacks: A Survey of Approaches and Countermeasures},
+  author={Zhanke Zhou and Jianing Zhu and Fengfei Yu and Xuan Li and Xiong Peng and Tongliang Liu and Bo Han},
+  booktitle={arXiv},
+  year={2024},
+  abbr={arXiv},
+  pdf={https://arxiv.org/pdf/2411.10023},
+  selected={false},
+  abstract={
+    The success of deep neural networks has driven numerous research studies and applications from Euclidean to non-Euclidean data. However, there are increasing concerns about privacy leakage, as these networks rely on processing private data. Recently, a new type of privacy attack, the model inversion attacks (MIAs), aims to extract sensitive features of private data for training by abusing access to a well-trained model. The effectiveness of MIAs has been demonstrated in various domains, including images, texts, and graphs. These attacks highlight the vulnerability of neural networks and raise awareness about the risk of privacy leakage within the research community. Despite the significance, there is a lack of systematic studies that provide a comprehensive overview and deeper insights into MIAs across different domains. This survey aims to summarize up-to-date MIA methods in both attacks and defenses, highlighting their contributions and limitations, underlying modeling principles, optimization challenges, and future directions. We hope this survey bridges the gap in the literature and facilitates future research in this critical area. Besides, we are maintaining a repository to keep track of relevant research at https://github.com/AndrewZhou924/Awesome-model-inversion-attack.
+  }
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
-}
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
+@inproceedings{peng2024ppdg,
+  title={Pseudo-Private Data Guided Model Inversion Attacks},
+  author={Xiong Peng and Bo Han and Feng Liu and Tongliang Liu and Mingyuan Zhou},
+  booktitle={the 38th Conference on Neural Information Processing Systems},
+  year={2024},
+  abbr={NeurIPS},
+  pdf={https://openreview.net/pdf?id=pyqPUf36D2},
+  code={https://github.com/AlanPeng0897/PPDG-MI},
   selected={true},
-  inspirehep_id = {3255}
+  abstract={
+    In model inversion attacks (MIAs), adversaries attempt to recover private training data by exploiting access to a well-trained target model. Recent advancements have improved MIA performance using a two-stage generative framework. This approach first employs a generative adversarial network to learn a fixed distributional prior, which is then used to guide the inversion process during the attack. However, in this paper, we observed a phenomenon that such a fixed prior would lead to a low probability of sampling actual private data during the inversion process due to the inherent distribution gap between the prior distribution and the private data distribution, thereby constraining attack performance. To address this limitation, we propose increasing the density around high-quality pseudo-private data—recovered samples through model inversion that exhibit characteristics of the private training data—by slightly tuning the generator. This strategy effectively increases the probability of sampling actual private data that is close to these pseudo-private data during the inversion process. After integrating our method, the generative model inversion pipeline is strengthened, leading to improvements over state-of-the-art MIAs. This paves the way for new research directions in generative MIAs.  
+  }
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@inproceedings{peng2022bido,
+  title={Bilateral dependency optimization: Defending against model-inversion attacks},
+  author={Xiong Peng and Feng Liu and Jingfeng Zhang and Long Lan and Junjie Ye and Tongliang Liu and Bo Han},
+  booktitle={the 28th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  abbr={KDD},
+  pdf={https://arxiv.org/pdf/2206.05483},
+  year={2022},
+  code={https://github.com/AlanPeng0897/Defend_MI},
+  selected={true},
+  abstract={
+    Through using only a well-trained classifier, model-inversion (MI) attacks can recover the data used for training the classifier, leading to the privacy leakage of the training data. To defend against MI attacks, previous work utilizes a unilateral dependency optimization strategy, i.e., minimizing the dependency between inputs (i.e., features) and outputs (i.e., labels) during training the classifier. However, such a minimization process conflicts with minimizing the supervised loss that aims to maximize the dependency between inputs and outputs, causing an explicit trade-off between model robustness against MI attacks and model utility on classification tasks. In this paper, we aim to minimize the dependency between the latent representations and the inputs while maximizing the dependency between latent representations and the outputs, named a bilateral dependency optimization (BiDO) strategy. In particular, we use the dependency constraints as a universally applicable regularizer in addition to commonly used losses for deep neural networks (e.g., cross-entropy), which can be instantiated with appropriate dependency criteria according to different tasks. To verify the efficacy of our strategy, we propose two implementations of BiDO, by using two different dependency measures: BiDO with constrained covariance (BiDO-COCO) and BiDO with Hilbert-Schmidt Independence Criterion (BiDO-HSIC). Experiments show that BiDO achieves the state-of-the-art defense performance for a variety of datasets, classifiers, and MI attacks while suffering a minor classification-accuracy drop compared to the well-trained classifier with no defense, which lights up a novel road to defend against MI attacks.
+  }
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
-}
-
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
-}
-
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
-}
