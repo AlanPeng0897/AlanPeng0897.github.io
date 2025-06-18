@@ -5,9 +5,9 @@ permalink: /
 subtitle: PhD student, <a href='https://github.com/tmlr-group'>TMLR Group@HKBU</a>
 
 profile:
-  align: left
+  align: right
   image: alan.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   # more_info: >
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
@@ -33,16 +33,3 @@ I'm a PhD student at Hong Kong Baptist University, advised by [Prof. Bo Han](htt
 My current research focuses on AI safety, with a particular emphasis on developing principled and insightful machine learning algorithms to better understand and improve privacy and security in modern AI systems.
 
 Outside of work, I enjoy running, basketball, and hiking. I'm highly curiosity-driven and read widely in my free time.
-
-
-
-
-
-<!-- Besides my work, I enjoy a variety of sports, especially running, basketball, and hiking. I’m highly curiosity-driven and love reading across a broad spectrum of topics. -->
-
-<!-- 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->

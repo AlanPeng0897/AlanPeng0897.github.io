@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Xiong (Alan) Peng # the website title (if blank, full name will be used instead)
+title: blank # the website title (if blank, full name will be used instead)
 first_name: Xiong (Alan)
 middle_name: 
 last_name: Peng
@@ -55,7 +55,7 @@ search_enabled: false
 bib_search: false
 
 # Dimensions
-max_width: 650px
+max_width: 700px
 
 # TODO: add layout settings (single page vs. multi-page)
 
