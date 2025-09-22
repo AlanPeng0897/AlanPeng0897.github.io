@@ -1,6 +1,18 @@
 ---
 ---
-
+@inproceedings{peng2024ppdg,
+  title={Generative Model Inversion Through the Lens of the Manifold Hypothesis},
+  author={Xiong Peng and Bo Han† and Fengfei Yu and Tongliang Liu and Feng Liu and Mingyuan Zhou},
+  booktitle={the 39th Conference on Neural Information Processing Systems},
+  year={2025},
+  abbr={NeurIPS},
+  pdf={https://openreview.net/pdf?id=Z6b7xavA3Y},
+  code={https://github.com/AlanPeng0897/AlignMI},
+  selected={true},
+  abstract={
+      Model inversion attacks (MIAs) aim to reconstruct class-representative samples from trained models. Recent generative MIAs utilize generative adversarial networks to learn image priors that guide the inversion process, yielding reconstructions with high visual quality and strong fidelity to the private training data. To explore the reason behind their effectiveness, we begin by examining the gradients of inversion loss w.r.t. synthetic inputs, and find that these gradients are surprisingly noisy. Further analysis reveals that generative inversion implicitly denoises these gradients by projecting them onto the tangent space of the generator manifold—filtering out off-manifold components while preserving informative directions aligned with the manifold. Our empirical measurements show that, in models trained with standard supervision, loss gradients often exhibit large angular deviations from the data manifold, indicating poor alignment with class-relevant directions. This observation motivates our central hypothesis: models become more vulnerable to MIAs when their loss gradients align more closely with the generator manifold. We validate this hypothesis by designing a novel training objective that explicitly promotes such alignment. Building on this insight, we further introduce a training-free approach to enhance gradient–manifold alignment during inversion, leading to consistent improvements over state-of-the-art generative MIAs.
+  }
+}
 
 @article{peng2025bido_plus,
   title={Unknown-Aware Bilateral Dependency Optimization for Defending Against Model Inversion Attacks},
@@ -19,7 +31,7 @@
 
 @inproceedings{zhou2024survey,
   title={Model Inversion Attacks: A Survey of Approaches and Countermeasures},
-  author={Zhanke Zhou and Jianing Zhu and Fengfei Yu and Xuan Li and Xiong Peng and Tongliang Liu and Bo Han†},
+  author={Zhanke Zhou* and Jianing Zhu* and Fengfei Yu* and Xuan Li and Xiong Peng and Tongliang Liu and Bo Han†},
   booktitle={arXiv},
   year={2024},
   abbr={arXiv},
