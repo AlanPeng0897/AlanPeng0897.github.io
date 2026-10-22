@@ -30,6 +30,6 @@ announcements:
 
 I'm a PhD student at Hong Kong Baptist University, advised by [Prof. Bo Han](https://bhanml.github.io/). I am also very fortunate to work closely with [Prof. Mingyuan Zhou](https://mingyuanzhou.github.io/) and [Prof. Feng Liu](https://fengliu90.github.io/index.html).
 
-My current research focuses on trustworthy AI, with a particular emphasis on developing principled and insightful machine learning algorithms to better understand and improve privacy and security in modern AI systems.
+My research focuses on **LLM post-training and reinforcement learning**, with an emphasis on improving reasoning and mitigating hallucinations through confidence calibration. My earlier work studied **generative models** (GANs and diffusion models) and **model inversion**, focusing on generative priors, mechanisms of private-data reconstruction, and defenses. I am also currently exploring **physical AI**, particularly world models for prediction, planning, and decision-making.
 
 Outside of work, I enjoy running, basketball, and hiking. I'm highly curiosity-driven and read widely in my free time.
