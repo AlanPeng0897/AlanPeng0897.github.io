@@ -318,7 +318,10 @@ ul.task-list input[type="checkbox"] {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 1.5rem;
+      flex: 0 0 1.75rem;
+      width: 1.75rem;
+      margin: 0;
+      padding: 0;
       min-height: 2.75rem;
       color: var(--global-text-color);
 
