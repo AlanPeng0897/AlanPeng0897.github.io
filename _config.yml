@@ -290,8 +290,8 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Xiong (Alan)]
-  first_name: [Peng]
+  last_name: [Peng]
+  first_name: [Xiong]
 
   style: apa
   locale: en
