@@ -20,7 +20,6 @@
   abbr={arXiv},
   pdf={https://arxiv.org/pdf/2610.02695},
   code={https://github.com/tmlr-group/TTCL},
-  preview={ttcl.jpg},
   selected={true},
   abstract={Test-Time Calibration Learning (TTCL) adapts reasoning accuracy and verbalized confidence on unlabeled target-task data. It builds correctness and calibration supervision from multiple sampled responses, using a target cache to stabilize learning. Experiments on mathematical reasoning and factual question answering show improved accuracy and calibration, including when calibration learned on a source task transfers poorly to a target task.}
 }
@@ -33,7 +32,6 @@
   abbr={NeurIPS},
   pdf={https://openreview.net/pdf?id=Z6b7xavA3Y},
   code={https://github.com/AlanPeng0897/AlignMI},
-  preview={alignmi.svg},
   selected={true},
   abstract={
       Model inversion attacks (MIAs) aim to reconstruct class-representative samples from trained models. Recent generative MIAs utilize generative adversarial networks to learn image priors that guide the inversion process, yielding reconstructions with high visual quality and strong fidelity to the private training data. To explore the reason behind their effectiveness, we begin by examining the gradients of inversion loss w.r.t. synthetic inputs, and find that these gradients are surprisingly noisy. Further analysis reveals that generative inversion implicitly denoises these gradients by projecting them onto the tangent space of the generator manifold—filtering out off-manifold components while preserving informative directions aligned with the manifold. Our empirical measurements show that, in models trained with standard supervision, loss gradients often exhibit large angular deviations from the data manifold, indicating poor alignment with class-relevant directions. This observation motivates our central hypothesis: models become more vulnerable to MIAs when their loss gradients align more closely with the generator manifold. We validate this hypothesis by designing a novel training objective that explicitly promotes such alignment. Building on this insight, we further introduce a training-free approach to enhance gradient–manifold alignment during inversion, leading to consistent improvements over state-of-the-art generative MIAs.
@@ -77,7 +75,6 @@
   abbr={NeurIPS},
   pdf={https://openreview.net/pdf?id=pyqPUf36D2},
   code={https://github.com/AlanPeng0897/PPDG-MI},
-  preview={ppdg.svg},
   selected={true},
   abstract={
     In model inversion attacks (MIAs), adversaries attempt to recover private training data by exploiting access to a well-trained target model. Recent advancements have improved MIA performance using a two-stage generative framework. This approach first employs a generative adversarial network to learn a fixed distributional prior, which is then used to guide the inversion process during the attack. However, in this paper, we observed a phenomenon that such a fixed prior would lead to a low probability of sampling actual private data during the inversion process due to the inherent distribution gap between the prior distribution and the private data distribution, thereby constraining attack performance. To address this limitation, we propose increasing the density around high-quality pseudo-private data—recovered samples through model inversion that exhibit characteristics of the private training data—by slightly tuning the generator. This strategy effectively increases the probability of sampling actual private data that is close to these pseudo-private data during the inversion process. After integrating our method, the generative model inversion pipeline is strengthened, leading to improvements over state-of-the-art MIAs. This paves the way for new research directions in generative MIAs.  
@@ -92,7 +89,6 @@
   pdf={https://arxiv.org/pdf/2206.05483},
   year={2022},
   code={https://github.com/AlanPeng0897/Defend_MI},
-  preview={bido-en.jpg},
   selected={true},
   abstract={
     Through using only a well-trained classifier, model-inversion (MI) attacks can recover the data used for training the classifier, leading to the privacy leakage of the training data. To defend against MI attacks, previous work utilizes a unilateral dependency optimization strategy, i.e., minimizing the dependency between inputs (i.e., features) and outputs (i.e., labels) during training the classifier. However, such a minimization process conflicts with minimizing the supervised loss that aims to maximize the dependency between inputs and outputs, causing an explicit trade-off between model robustness against MI attacks and model utility on classification tasks. In this paper, we aim to minimize the dependency between the latent representations and the inputs while maximizing the dependency between latent representations and the outputs, named a bilateral dependency optimization (BiDO) strategy. In particular, we use the dependency constraints as a universally applicable regularizer in addition to commonly used losses for deep neural networks (e.g., cross-entropy), which can be instantiated with appropriate dependency criteria according to different tasks. To verify the efficacy of our strategy, we propose two implementations of BiDO, by using two different dependency measures: BiDO with constrained covariance (BiDO-COCO) and BiDO with Hilbert-Schmidt Independence Criterion (BiDO-HSIC). Experiments show that BiDO achieves the state-of-the-art defense performance for a variety of datasets, classifiers, and MI attacks while suffering a minor classification-accuracy drop compared to the well-trained classifier with no defense, which lights up a novel road to defend against MI attacks.
