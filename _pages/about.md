@@ -32,4 +32,4 @@ I'm a PhD student at Hong Kong Baptist University, advised by [Prof. Bo Han](htt
 
 My research focuses on **LLM post-training and reinforcement learning**, with an emphasis on improving reasoning and mitigating hallucinations through confidence calibration. My earlier work studied **generative models** (GANs and diffusion models) and **model inversion**, focusing on generative priors, mechanisms of private-data reconstruction, and defenses. I am also currently exploring **physical AI**, particularly world models for prediction, planning, and decision-making.
 
-Outside of research, I enjoy running, basketball, and hiking. I'm naturally curious and enjoy reading across a wide range of topics.
+Outside of research, I enjoy running, basketball, hiking, and reading.
