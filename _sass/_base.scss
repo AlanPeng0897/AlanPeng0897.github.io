@@ -310,7 +310,8 @@ ul.task-list input[type="checkbox"] {
     align-items: center;
     gap: 0.625rem;
     padding: 0;
-    margin-right: 1rem;
+    margin: 0 1rem 0 0;
+    flex-shrink: 0;
     font-size: 1.75rem;
     line-height: 1;
 
